@@ -20,6 +20,8 @@ while (f->next != NULL)
 f = f->next;
 l++;
 }
+if (l == 1)
+return (0);
 if (d->n == f->n)
 {
 while (i <= (l / 2))
