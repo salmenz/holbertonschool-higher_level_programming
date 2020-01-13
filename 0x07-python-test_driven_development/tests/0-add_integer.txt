@@ -1,0 +1,38 @@
+Importing the function from the module:
+
+  >>> add_integer = __import__("0-add_integer").add_integer
+
+Check:
+    >>> add_integer(7, 3)
+    10
+
+Check:
+    >>> add_integer(5, -6)
+    -1
+
+Check:
+    >>> add_integer(-9, 2)
+    -7
+
+
+Check:
+    >>> add_integer(3.88, 9)
+    12
+
+Check:
+    >>> add_integer(2, 7.1)
+    9
+
+Check:
+    >>> add_integer(2.25, 3.3)
+    5
+
+Check:
+    >>> add_integer(10, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Check:
+    >>> add_integer(2)
+    100
