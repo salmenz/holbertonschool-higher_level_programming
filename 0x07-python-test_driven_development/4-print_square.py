@@ -9,5 +9,5 @@ def print_square(size):
     else:
         for i in range(size):
             for j in range(size):
-                print("#",end="")
+                print("#", end="")
             print()
