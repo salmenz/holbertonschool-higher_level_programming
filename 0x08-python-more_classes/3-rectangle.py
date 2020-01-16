@@ -40,3 +40,11 @@ class Rectangle:
             return 0
         else:
             return (self.width + self.height) * 2
+
+    def __str__(self):
+        str = ""
+        for i in range(self.height):
+            for j in range(self.width):
+                str += '#'
+            str += '\n'
+        return str
