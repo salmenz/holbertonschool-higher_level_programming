@@ -4,7 +4,7 @@ Importing the function from the module:
 
 Check:
 >>> say_my_name("Salmen")
-My name is Salmen
+My name is Salmen 
 
 Check:
 >>> say_my_name("Salmen", "Zouari")
