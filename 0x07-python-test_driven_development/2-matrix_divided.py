@@ -13,6 +13,8 @@ def matrix_divided(matrix, div):
         for j in range(len(matrix[i])):
             if type(matrix[i][j]) != int and type(matrix[i][j]) != float:
                 raise TypeError(msg)
+            if type(div) is not float and type(div) is not int:
+                raise TypeError("div must be a number")
             if div == 0:
                 raise ZeroDivisionError("division by zero")
             m.append(round(matrix[i][j] / div, 2))
