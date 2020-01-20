@@ -36,3 +36,9 @@ Check:
 Check:
     >>> add_integer(2)
     100
+
+Check:
+    >>> add_integer(10, "0")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
