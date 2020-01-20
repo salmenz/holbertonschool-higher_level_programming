@@ -7,7 +7,7 @@ Check:
 My name is Salmen
 
 Check:
->>> say_my_name("Salmen", "Zouri")
+>>> say_my_name("Salmen", "Zouari")
 My name is Salmen Zouari
 
 Check:
