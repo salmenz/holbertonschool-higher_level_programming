@@ -1,0 +1,26 @@
+Importing the function from the module:
+
+  >>> print_square = __import__('4-print_square').print_square
+
+Check:
+>>> print_square(4)
+####
+####
+####
+####
+
+Check:
+>>> print_square(0)
+
+
+Check:
+>>> print_square(-14)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+Check:
+>>> print_square("k")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
