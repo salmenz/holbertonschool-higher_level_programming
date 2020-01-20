@@ -11,8 +11,10 @@ Check:
     -1
 
 Check:
-    >>> add_integer(-9, 2)
-    -7
+    >>> add_integer(float('nan'), 2)
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
 
 
 Check:
@@ -20,10 +22,10 @@ Check:
     12
 
 Check:
-    >>> add_integer(float("hbtn"), 2)
+    >>> add_integer(float('inf'), 2)
     Traceback (most recent call last):
     ...
-    ValueError: could not convert string to float: 'hbtn'
+    OverflowError: cannot convert float infinity to integer
 
 Check:
     >>> add_integer(2.25, 3.3)
