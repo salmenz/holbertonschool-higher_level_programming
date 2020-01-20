@@ -17,6 +17,9 @@ def matrix_divided(matrix, div):
                 raise TypeError("div must be a number")
             if div == 0:
                 raise ZeroDivisionError("division by zero")
-            m.append(round(matrix[i][j] / div, 2))
+            if div == float('inf'):
+                m.append(round(0 / 1, 2))
+            else:
+                m.append(round(matrix[i][j] / div, 2))
         new_matrix.append(m)
     return new_matrix

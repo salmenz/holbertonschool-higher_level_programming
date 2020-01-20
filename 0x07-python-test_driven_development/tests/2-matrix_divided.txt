@@ -2,7 +2,7 @@ Importing the function from the module:
     >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
 Check:
->>> matrix_divided([[1, 1, 1], [1, 1, 1]], None)
+>>> matrix_divided([[1, 1, 1], [1, 1, 1]], "hhh")
 Traceback (most recent call last):
 ...
 TypeError: div must be a number

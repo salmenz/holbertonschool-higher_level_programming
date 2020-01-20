@@ -2,7 +2,7 @@
 matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 matrix =  [
-          [3, "9"], [15, 3]
+          [3, 5], [15, 3]
 ]
-print(matrix_divided(matrix, 3))
+print(matrix_divided(matrix, float('inf')))
 print(matrix)
