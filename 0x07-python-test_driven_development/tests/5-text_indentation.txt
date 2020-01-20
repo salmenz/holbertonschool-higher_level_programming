@@ -3,12 +3,12 @@ Importing the function from the module:
   >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 Check:
->>> text_indentation("Salmen. Zouari? Yes Baby.")
+>>> text_indentation("Salmen. Zouari? Yes Baby:")
 Salmen.
 <BLANKLINE>
 Zouari?
 <BLANKLINE>
-Yes Baby.
+Yes Baby:
 
 Check:
 >>> text_indentation([15,15])
