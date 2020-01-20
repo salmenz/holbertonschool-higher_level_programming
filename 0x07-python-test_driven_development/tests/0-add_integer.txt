@@ -20,8 +20,10 @@ Check:
     12
 
 Check:
-    >>> add_integer(2, 7.1)
-    9
+    >>> add_integer(float("hbtn"), 2)
+    Traceback (most recent call last):
+    ...
+    ValueError: could not convert string to float: 'hbtn'
 
 Check:
     >>> add_integer(2.25, 3.3)
