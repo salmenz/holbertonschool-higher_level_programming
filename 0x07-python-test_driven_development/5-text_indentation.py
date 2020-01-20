@@ -10,5 +10,7 @@ def text_indentation(text):
                 if i != len(text) - 1:
                     print()
                     print()
-                i += 1
+                if i+1 < len(text):
+                    if text[i+1] == ' ':
+                        i += 1
             i += 1

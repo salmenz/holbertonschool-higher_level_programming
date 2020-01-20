@@ -5,9 +5,9 @@ Importing the function from the module:
 Check:
 >>> text_indentation("Salmen. Zouari? Yes Baby.")
 Salmen.
-
+<BLANKLINE>
 Zouari?
-
+<BLANKLINE>
 Yes Baby.
 
 Check:
@@ -25,5 +25,5 @@ TypeError: text_indentation() missing 1 required positional argument: 'text'
 Check:
 >>> text_indentation("Holberton.School")
 Holberton.
-
-chool
+<BLANKLINE>
+School
