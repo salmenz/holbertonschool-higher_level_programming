@@ -4,11 +4,7 @@ def matrix_divided(matrix, div):
     m = []
     msg = "matrix must be a matrix (list of lists) of integers/floats"
     l = len(matrix[0])
-    if len(matrix) == 0:
-        raise TypeError(msg)
     for i in range(len(matrix)):
-        if (len(matrix))[i] == 0:
-            raise TypeError(msg)
         if type(matrix[i]) != list:
             raise TypeError(msg)
         if len(matrix[i]) != l:
