@@ -16,10 +16,6 @@ Check:
 
 
 Check:
-    >>> add_integer(3.88, 9)
-    12
-
-Check:
     >>> add_integer(float('inf'), 2)
     OverflowError: cannot convert float infinity to integer
 
