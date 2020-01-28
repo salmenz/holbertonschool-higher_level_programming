@@ -1,7 +1,19 @@
 #!/usr/bin/python3
+"""
+This module for class Base
+"""
+import json
+
+
 class Base:
+    """
+    class base
+    """
     __nb_objects = 0
     def __init__(self, id=None):
+        """
+        Constructor of class Base
+        """
         if id != None:
             self.id = id
         else:
