@@ -21,17 +21,15 @@ class Square(Rectangle):
         @id: amount of instances created
         """
         super().__init__(size, size, x, y, id)
-        self.size = size
 
     @property
     def size(self):
         """ size getter """
-        return self.__size
+        return self.size
 
     @size.setter
     def size(self, value):
         """ size setter """
-        self.size = value
         self.width = value
         self.height = value
 
