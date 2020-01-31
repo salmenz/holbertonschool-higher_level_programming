@@ -57,11 +57,11 @@ class Base:
     def create(cls, **dictionary):
         """Returns an instance of class"""
         if cls.__name__ == "Square":
-            New = cls(69, 1, 2)
+            new = cls(69, 1, 2)
         elif cls.__name__ == "Rectangle":
-            New = cls(69, 1, 2, 3)
-        New.update(**dictionary)
-        return New
+            new = cls(69, 69, 1, 2)
+        new.update(**dictionary)
+        return new
 
     @classmethod
     def load_from_file(cls):
