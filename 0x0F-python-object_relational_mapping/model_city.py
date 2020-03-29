@@ -3,12 +3,9 @@
 class city
 """
 
-
-from model_state import State
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
-
-Base = declarative_base()
+from sqlalchemy.ext.declarative import declarative_base
+from model_state import Base
 
 
 class City(Base):
