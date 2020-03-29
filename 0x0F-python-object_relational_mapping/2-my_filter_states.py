@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""lists all states from the database hbtn_0e_0_usa"""
+"""lists the searched state from the database hbtn_0e_0_usa"""
 import sys
 import MySQLdb
 if __name__ == "__main__":
@@ -9,9 +9,10 @@ if __name__ == "__main__":
                            passwd=sys.argv[2],
                            db=sys.argv[3])
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name = sys.argv[4]")
+    cur.execute("SELECT * FROM states")
     query_rows = cur.fetchall()
     for row in query_rows:
-        print(row)
+        if row[1] == sys.argv[4]: 
+            print(row)
     cur.close()
     conn.close()
