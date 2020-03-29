@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""lists the searched state from the database hbtn_0e_0_usa"""
+"""lists all cities of that state, using the database hbtn_0e_4_usa"""
 import sys
 import MySQLdb
 if __name__ == "__main__":
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     list = ""
     for row in query_rows:
         if row[1] == sys.argv[4]:
-            list + raw[0]
+            list + row[0]
             list + ", "
     if list:
         print(list[:-2])
