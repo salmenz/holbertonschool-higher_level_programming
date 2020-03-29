@@ -14,7 +14,7 @@ if __name__ == "__main__":
                            format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     Base.metadata.create_all(engine)
-    states = Session().query(State).first()
+    state = Session().query(State).first()
     if not state:
         print("Nothing")
     else:
