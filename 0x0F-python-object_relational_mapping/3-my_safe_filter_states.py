@@ -9,7 +9,7 @@ if __name__ == "__main__":
                            passwd=sys.argv[2],
                            db=sys.argv[3])
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id"
+    cur.execute("SELECT * FROM states ORDER BY id")
     query_rows = cur.fetchall()
     for row in query_rows:
         if query_rows[1] == sys.argv[4]:
