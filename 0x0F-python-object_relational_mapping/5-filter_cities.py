@@ -17,6 +17,7 @@ if __name__ == "__main__":
         if row[1] == sys.argv[4]:
             list + raw[0]
             list + ", "
-    print(list[:-2])
+    if list:
+        print(list[:-2])
     cur.close()
     conn.close()
