@@ -9,15 +9,10 @@ if __name__ == "__main__":
                            passwd=sys.argv[2],
                            db=sys.argv[3])
     cur = conn.cursor()
-    cur.execute("SELECT cities.name, states.name FROM cities JOIN\
-                ON states cities.state_id = states.id ORDER BY cities.id")
+    cur.execute("SELECT cities.name FROM cities JOIN ON states\
+                 cities.state_id = states.id WHERE states.name \
+                 LIKE '{}' ORDER BY cities.id".format(sys.argv[4]))
     query_rows = cur.fetchall()
-    list = ""
-    for row in query_rows:
-        if row[1] == sys.argv[4]:
-            list + row[0]
-            list + ", "
-    if list:
-        print(list[:-2])
+    print(", ".join(row[0] for row in query_rows))
     cur.close()
     conn.close()
