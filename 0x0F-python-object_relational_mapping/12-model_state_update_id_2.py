@@ -18,5 +18,5 @@ if __name__ == "__main__":
 
     Session().query(State).filter(State.id == 2) \
         .update({State.name: "New Mexico"})
-    Session.commit()
+    Session().commit()
     Session().close()
