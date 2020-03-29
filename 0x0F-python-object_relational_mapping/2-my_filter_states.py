@@ -11,8 +11,8 @@ if __name__ == "__main__":
     cur = conn.cursor()
     cur.execute("SELECT * FROM states")
     query_rows = cur.fetchall()
-    for row in query_rows:
-        if row[1] == sys.argv[4][1:-1]: 
+    for row in cur.fetchall():
+        if row[1] == sys.argv[4]: 
             print(row)
     cur.close()
     conn.close()
