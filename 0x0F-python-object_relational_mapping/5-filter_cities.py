@@ -10,13 +10,13 @@ if __name__ == "__main__":
                            db=sys.argv[3])
     cur = conn.cursor()
     cur.execute("SELECT cities.name, states.name FROM cities JOIN\
-                ON states cities.state_id = states.id ORDER BY id")
+                ON states cities.state_id = states.id ORDER BY cities.id")
     query_rows = cur.fetchall()
-    list=""
+    list = ""
     for row in query_rows:
         if row[1] == sys.argv[4]:
             list + raw[0]
             list + ", "
-    print(list[:-2]
+    print(list[:-2])
     cur.close()
     conn.close()
