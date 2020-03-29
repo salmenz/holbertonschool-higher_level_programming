@@ -12,7 +12,7 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states ORDER BY id")
     query_rows = cur.fetchall()
     for row in query_rows:
-        if query_rows[1] == sys.argv[4]:
+        if row[1] == sys.argv[4]:
             print(row)
     cur.close()
     conn.close()
