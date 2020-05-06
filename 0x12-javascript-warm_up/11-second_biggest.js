@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const t = [];
-if (process.argv.len < 4) {
+if (process.argv.length < 4) {
   console.log('0');
 } else {
   for (let i = 2; i < process.argv.length; i++) {
