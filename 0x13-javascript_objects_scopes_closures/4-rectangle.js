@@ -12,6 +12,7 @@ class Rectangle {
       console.log('X'.repeat(this.width));
     }
   }
+
   rotate () {
     const h = this.height;
     const w = this.width;
